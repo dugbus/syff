@@ -125,7 +125,7 @@ a:focus {
 }
 
 .header {
-  background: url(/assets/img/kids.jpg) no-repeat center center;
+  background: url(/assets/img/fantasy-landscape.jpg) no-repeat center center;
   background-size: cover;
   color: #fff;
   padding: 20rem 2rem;
@@ -151,7 +151,7 @@ a:focus {
 .content {
   max-width: 60rem;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 1.125rem;
   position: relative;
 }
 
@@ -508,4 +508,43 @@ a.btn {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.blockquote {
+  background: #8926E1;
+  border-left: 10px solid #a0e020;
+  margin: 1.5rem 0;
+  padding: 2rem 1rem;
+  quotes: "\201C""\201D""\201C""\201D";
+  color: #fff;
+}
+
+.blockquote p {
+  display: inline;
+}
+
+.blockquote:before {
+  color: #a0e020;
+  content: open-quote;
+  font-size: 4rem;
+  line-height: 0;
+  vertical-align: -1.75rem;
+}
+
+.blockquote p:after {
+  color: #a0e020;
+  content: close-quote;
+  font-size: 4rem;
+  line-height: 0;
+  vertical-align: -1.75rem;
+}
+
+.cite {
+  display: block;
+  margin: 1rem 0 0;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #a0e020;
 }

@@ -220,8 +220,12 @@ a:focus {
   margin: 0 auto 2rem;
 }
 
+.video-frame {
+  margin-bottom: 1rem;
+}
+
 .video-title {
-  margin: 2rem 0 0.5rem 0.5rem;
+  margin: 2rem 0 0.5rem;
 }
 
 .elastic {
@@ -278,6 +282,10 @@ a:focus {
   text-decoration: none;
   font-weight: bold;
   padding: 0.6rem 1rem;
+}
+
+.nav .active {
+  border-bottom: 2px solid #fff;
 }
 
 .arrow {
@@ -482,6 +490,10 @@ a.btn {
 
 .intro .patron {
   margin-bottom: 0;
+}
+
+.intro-lede {
+  font-weight: 600;
 }
 
 .patron > div {

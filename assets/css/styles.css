@@ -352,6 +352,7 @@ a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 1.25rem 0 0;
 }
 
 .waiter {
@@ -472,18 +473,15 @@ a.btn {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 84rem;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.patron-reverse {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+.intro .patron {
+  margin-bottom: 0;
 }
 
 .patron > div {

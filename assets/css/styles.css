@@ -136,6 +136,7 @@ a:focus {
   background-size: cover;
   color: #fff;
   padding: 20rem 2rem;
+  transition: 3s;
 }
 
 .header-title {

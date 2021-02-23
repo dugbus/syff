@@ -142,6 +142,11 @@
     let bgArray = ['fantasy-landscape.jpg', 'space-landscape.jpg']
     let index = 0
 
+    bgArray.forEach(function (img) {
+      new Image().src = "/assets/img/" + img;
+      // caches images, avoiding white flash between background replacements
+    });
+
     function rotate() {
       console.log(index)
       index++

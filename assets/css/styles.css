@@ -434,7 +434,7 @@ a:focus {
     display: block;
   }
   .nav li {
-    margin: 0 0.8rem;
+    margin: 0 0.8rem 1.5rem;
   }
   .content {
     padding: 0 2rem;

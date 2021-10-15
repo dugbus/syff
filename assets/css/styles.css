@@ -216,7 +216,8 @@ a:focus {
   overflow: auto;
 }
 
-.announce h2 {
+.announce h2,
+.announce h3 {
   color: #a0e020;
 }
 

@@ -69,17 +69,28 @@
         <li><a class="nav-link" href="/festival">Festival</a></li>
         <li><a class="nav-link" href="/coptv">COP TV</a></li>
         <li><a class="nav-link" href="/ames">The AMES Awards</a></li>
-        <li><a class="nav-link" href="/outreach">Outreach</a></li>
+        <li><a class="nav-link" href="/outreach">Outreach and Education</a></li>
         <li><a class="nav-link" href="/patrons">Patrons</a></li>
         <li><a class="nav-link" href="/board">Board</a></li>
         <li><a class="nav-link" href="/links">Links</a></li>
       </ul>
     </nav>
-    <header class="header" id="header">
+    <div class="carousel-container">
+      <img class="slide" src="/assets/img/slides/slide-01.jpg" width="1920" height="700" alt="SYFF in action">
+      <img class="slide" src="/assets/img/slides/slide-02.jpg" width="1920" height="700" alt="SYFF in action">
+      <img class="slide" src="/assets/img/slides/slide-03.jpg" width="1920" height="700" alt="SYFF in action">
+      <img class="slide" src="/assets/img/slides/slide-04.jpg" width="1920" height="700" alt="SYFF in action">
+      <h1 class="carousel-title">
+        <span class="header-block">WRITE ● SHOOT ● EDIT ● LEARN</span>
+      </h1>
+    </div>
+
+    <!-- <header class="header" id="header">
       <h1 class="header-title">
         <span class="header-block">WRITE ● SHOOT ● EDIT ● LEARN</span>
       </h1>
-    </header>
+    </header> -->
+
     <main id="main" class="main">
       <section class="section intro">
         <div class="content">
@@ -93,18 +104,17 @@
             film.
           </p>
 
-          <p>
-            <a href="/change/"
-              >Learn more about our COP26 climate change film competition.</a
-            >
-          </p>
-
-          <p>
-            <a href="/festival/"
-              >Find details of submitting to this year’s Scottish Youth Film
-              Festival.</a
-            >
-          </p>
+          <div class="video-frame">
+            <div class="embed-container">
+              <iframe
+                src="https://player.vimeo.com/video/640430373"
+                frameborder="0"
+                webkitAllowFullScreen
+                mozallowfullscreen
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
 
           <p>
             If you’d like to support our work use the QR code or donate button
@@ -279,25 +289,41 @@
       <div class="waiter-icon"></div>
     </div>
     <script>
-      let hero = document.getElementById("header");
-      let bgArray = ["fantasy-landscape.jpg", "space-landscape.jpg"];
-      let index = 0;
+      let slideIndex = 0;
+      showSlides();
 
-      bgArray.forEach(function (img) {
-        new Image().src = "/assets/img/" + img;
-        // caches images, avoiding white flash between background replacements
-      });
-
-      function rotate() {
-        console.log(index);
-        index++;
-        if (index >= bgArray.length) {
-          index = 0;
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
         }
-        hero.style.backgroundImage = "url(/assets/img/" + bgArray[index] + ")";
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 5000);
       }
 
-      setInterval(rotate, 6000);
+
+      // let hero = document.getElementById("header");
+      // let bgArray = ["fantasy-landscape.jpg", "space-landscape.jpg"];
+      // let index = 0;
+
+      // bgArray.forEach(function (img) {
+      //   new Image().src = "./assets/img/" + img;
+      //   console.log("/assets/img/" + img);
+      //   // caches images, avoiding white flash between background replacements
+      // });
+
+      // function rotate() {
+      //   index++;
+      //   if (index >= bgArray.length) {
+      //     index = 0;
+      //   }
+      //   hero.style.backgroundImage = "url(/assets/img/" + bgArray[index] + ")";
+      // }
+
+      // setInterval(rotate, 6000);
     </script>
   </body>
 </html>

@@ -626,3 +626,7 @@ a.btn {
     opacity: 1
   }
 }
+
+.text-center {
+  text-align: center;
+}

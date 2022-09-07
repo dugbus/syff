@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.classList.add("ready");
 });
 
+const toggle = document.getElementById('toggle');
+const nav = document.getElementById('nav');
+
+toggle.addEventListener('click', (e) => {
+  e.preventDefault();
+  nav.classList.toggle('open');
+});
+
 document.getElementById("copyright").innerHTML = new Date().getFullYear();
 
 (function () {

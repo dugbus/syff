@@ -3,6 +3,7 @@
   --clr-lime: #9c3;
   --clr-purple: #8a2be2;
   --clr-heather: #399;
+  --brk-point: 1366px;
 }
 
 @font-face {
@@ -455,7 +456,7 @@ a:focus {
   }
 
   .nav li {
-    margin: 0.5rem 0.8rem;
+    margin: 0.25rem 0.5rem;
   }
 
   .content {
@@ -651,7 +652,7 @@ a.btn {
   color: #fff;
   display: inline-block;
   font-size: 1.125rem;
-  margin: 0 0 0.25rem 1rem;
+  margin: 0 0 0 0.5rem;
   padding: 0.5rem;
   position: relative;
   text-decoration: none;
@@ -698,7 +699,7 @@ a.btn {
   transform-origin: 0 50%;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
 
   .nav-list {
     display: block;
@@ -814,9 +815,19 @@ a.btn {
 ############################## */
 
 .toggle {
-  display: block;
+  display: flex;
   z-index: 30;
   height: 2.125rem;
+  font-size: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+}
+
+.toggle:hover,
+.toggle:active,
+.toggle:focus {
+  color: #fff;
 }
 
 .toggle span {
@@ -824,7 +835,7 @@ a.btn {
   width: 2rem;
   height: 0.125rem;
   background-color: #fff;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0.75rem;
   border-radius: 0.125rem;
   opacity: 1;
   -webkit-transition: background-color var(--transition), opacity var(--transition), -webkit-transform var(--transition);
@@ -860,7 +871,7 @@ a.btn {
   transform: translateY(-0.625rem) rotate(-45deg);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
   .toggle {
     display: none;
   }

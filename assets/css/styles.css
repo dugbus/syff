@@ -488,21 +488,30 @@ a:focus {
 }
 
 a.btn {
-  background: #f1c40f;
+  background: #99CC33;
   padding: 1rem 2rem;
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
   color: #080e1c;
+  color: #fff;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   text-decoration: none;
-  display: inline-block;
   margin: 1rem 0 0;
-  border-bottom: 2px solid #d0ac1e;
+  border-bottom: 3px solid #80aa2c;
   font-weight: bold;
+  font-size: 1.25rem;
+}
+
+a.btn svg {
+  max-width: 1.75rem;
+  display: inline;
+  vertical-align: bottom;
+  opacity: 0.95;
+  margin-left: 0.25rem;
 }
 
 .patron {
